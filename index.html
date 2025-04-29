@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Apartamento</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Cadastro de Apartamento</h1>
+        <form action="/cadastrar" method="POST">
+            <label for="bloco">Bloco:</label>
+            <input type="text" id="bloco" name="bloco" required>
+           
+            <label for="qtd_apartamentos">Quantidade de Apartamentos:</label>
+            <input type="number" id="qtd_apartamentos" name="qtd_apartamentos" required>
+           
+            <label for="numero_apartamento">N° do Apartamento:</label>
+            <input type="number" id="numero_apartamento" name="numero_apartamento" required>
+
+            <label for="residente">Residente:</label>
+            <input type="text" id="residente" name="residente" required>
+                                 
+            <button type="submit">Cadastrar Apartamento</button>
+            <button type="reset">Limpar</button>
+
+        </form>
+    </div>
+    
+    <div>
+        <a href="/Listar"><button class="Listar">Listar</button></a>
+
+    </div>      
+</body>
+</html>
